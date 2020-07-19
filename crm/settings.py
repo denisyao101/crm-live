@@ -125,7 +125,6 @@ STATIC_URL = '/docs/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
-    'docs'
 ]
 MEDIA_ROOT = os.path.join(BASE_DIR, 'crm/docs/images')
 
