@@ -1,0 +1,17 @@
+{% extends 'accounts/main.html' %}
+{% block content %}
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card card-body">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    {{ form }}
+                    <br>
+                    <a class="btn btn-sm btn-warning" href="{% url 'home' %}">Cancel</a>
+                    <input type="submit" value="Valider" class="btn btn-sm btn-info">
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
